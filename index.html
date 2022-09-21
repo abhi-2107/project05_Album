@@ -1,26 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
-  <body>
-    
- <nav class="navbar bg-dark navbar-dark">
 
-  <div class="container-fluid">
-<ul class="navbar-nav ">
-  <li class="nav-item">
-    <a href="#" class="nav-link navbar-brand">Album</a>
-  </li>
-</ul>
-  </div>
- </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
 
- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima numquam mollitia, magnam ea ratione sapiente assumenda similique repellendus. Voluptatibus quia in ullam, ea iusto iure.</p>
+<body>
+  <header>
+    <div id="content-collapse" class="collapse bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 text-white py-4 col-md-7">
+            <h4 class="text-white">Album</h4>
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quo totam nobis eaque
+              nesciunt, tenetur praesentium voluptatem sit, sapiente consectetur nihil vero autem accusantium minus.
+              Eveniet delectus aperiam ab fugiat magni reiciendis, perspiciatis possimus sint aut labore? Reiciendis,
+              odio repudiandae.</p>
+          </div>
+          <div class="col-4 py-4 offset-md-1">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled ">
+              <li><a href="#" class=" text-white">Follow on Twitter</a></li>
+              <li><a href="#" class=" text-white">Like on Facebook</a></li>
+              <li><a href="#" class=" text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-dark bg-dark clearfix">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand"><strong>Album</strong></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#content-collapse"><span
+          class="navbar-toggler-icon"></span></button>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
