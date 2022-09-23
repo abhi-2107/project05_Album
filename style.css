@@ -2,3 +2,18 @@
     height: 225px;
     width: 100%;
 }
+.head-link{
+    color: white;
+    text-decoration: none;
+}
+.head-link:hover{
+    text-decoration: underline;
+    color: white;
+}
+.foot-link{
+    text-decoration: none;
+}
+.foot-link:hover{
+    text-decoration: underline;
+    color: rgb(31, 31, 182);
+}

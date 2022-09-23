@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Project05_Album</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div id="content-collapse" class="collapse bg-dark">
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-8 text-white py-4 col-md-7">
             <h4 class="text-white">Album</h4>
@@ -23,30 +23,38 @@
               nesciunt, tenetur praesentium voluptatem sit, sapiente consectetur nihil vero autem accusantium minus.
               Eveniet delectus aperiam ab fugiat magni reiciendis, perspiciatis possimus sint aut labore? Reiciendis,
               odio repudiandae.</p>
-          </div>
-          <div class="col-4 py-4 offset-md-1">
-            <h4 class="text-white">Contact</h4>
-            <ul class="list-unstyled ">
-              <li><a href="#" class=" text-white">Follow on Twitter</a></li>
-              <li><a href="#" class=" text-white">Like on Facebook</a></li>
-              <li><a href="#" class=" text-white">Email me</a></li>
+            </div>
+            <div class="col-4 py-4 offset-md-1">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+              <li><a href="#" class="head-link ">Follow on Twitter</a></li>
+              <li><a href="#" class="head-link ">Like on Facebook</a></li>
+              <li><a href="#" class="head-link ">Email me</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-dark bg-dark clearfix">
+  <nav class="navbar navbar-dark bg-dark ">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand"><strong>Album</strong></a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#content-collapse"><span
-          class="navbar-toggler-icon"></span></button>
+      <div class="d-flex  align-items-center">
+        <!-- <img src="./img/camera.svg" class="text-primary" alt=""> -->
+        <!-- <i class="bi bi-camera"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera text-light " viewBox="0 0 16 16">
+  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+</svg>
+      <a href="#" class="navbar-brand mx-2"><strong>Album</strong></a>
     </div>
-  </nav>
-  <main>
-    <div class="container p-5 text-center">
-      <div class="container px-5 ">
-        <h1 class="display-6">Album Hasmukh</h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#content-collapse"><span
+        class="navbar-toggler-icon"></span></button>
+      </div>
+    </nav>
+    <main>
+      <div class="container py-5 px-3  text-center">
+        <div class="container-fluid pt-5 ">
+        <h1 class="display-5">Album Hasmukh</h1>
         <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos
           beatae
           quidem id quam recusandae error labore amet nobis cumque reprehenderit eligendi, hic, nemo, ullam optio!
@@ -60,14 +68,13 @@
 
   </main>
   <!-- Table section -->
-  <section class="container bg-light p-5">
-    <div class="row my-4">
+  <section class="container bg-light py-5 px-3 ">
+    <div class="row my-4">  
       <div class="col-md-4">
-        <div class="card">
+        <div class="card box-shadow">
           <img class="image-of-card" src="./img/tom-jerry.jpg" alt="tom bhai jerry">
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. officia. Odio consectetur corporis magni pariatur.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -84,7 +91,7 @@
           <img src="./img/bob_builder.jpg" class="image-of-card" alt="tom bhai jerry">
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+              voluptates consequuntur officia pariatur.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -100,8 +107,7 @@
         <div class="card">
           <img src="./img/mrbeen.jpg" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque.  Odio consectetur corporis magni pariatur.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -122,7 +128,7 @@
           <img src="./img/poerpuff.jpg" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+              corporis magni pariatur.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -138,8 +144,7 @@
         <div class="card">
           <img src="./img/oswal.jpg" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+            <p class="card-text">Lorem ipsum dolor sit ametvoluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -156,7 +161,7 @@
           <img src="./img/Popeye.png" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+              voluptates consequuntur officia.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -177,7 +182,7 @@
           <img src="./img/idea.jpg" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+              voluptates consequuntur something.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -194,7 +199,7 @@
           <img class="image-of-card" src="./img/poerpuff.jpg" alt="tom bhai jerry" class="image-of-card">
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+              voluptates consequuntur too much.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -210,8 +215,7 @@
         <div class="card">
           <img class="image-of-card" src="./img/lighthouse.jpg" alt="tom bhai jerry">
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing iure cumque. cere dolorem
-              voluptates consequuntur officia. Odio consectetur corporis magni pariatur.</p>
+            <p class="card-text">Bhaisahab sahi mai kya borring chiz hai bootstrap, sasura pareshan kar diya hai, ye class vo class pta ni kon si class.</p>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
@@ -225,16 +229,16 @@
       </div>
     </div>
   </section>
-  <footer class="container p-5">
+  <footer class="container p-3">
     <div class="left-foot">
-      <a class="float-end" href="#">Back to Top</a>
-      <p class="text-muted">Lorem ipsum dolor sit amet &copy consectetur sometjhij did i di d adipisicing elit.
-        Deleniti, vel!</p>
-      <p>Lorem ipsum <a href="#">aman bahi sharma</a> sit amet, consectetur <a href="#">panchal</a> adipisicing elit.
+      <a class="float-end foot-link" href="#top">Back to Top</a>
+      <p class="text-muted">Lorem ipsum dolor sit amet &copy dhundla jaye jo manzile ek pal ko tu nazar jhuka teri kismat.
+        </p>
+      <p>Lorem ipsum <a href="#" class="foot-link">aman bahi sharma</a> sit amet, consectetur <a href="#" class="foot-link">panchal</a> adipisicing elit.
       </p>
 
-    </div>
 
+    </div>
   </footer>
 
 
